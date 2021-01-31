@@ -11,6 +11,12 @@ app.get("/", (req, res) => {
   res.render("home", { data });
 });
 
+app.get("/:color", (req, res) => {
+  const { color } = req.params;
+  let colorObj = colorData.colorData[color];
+  res.render("color-page", { colorObj });
+});
+
 app.listen(3000, () => {
   console.log("listening on port 3000");
 });
