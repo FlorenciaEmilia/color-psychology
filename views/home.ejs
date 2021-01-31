@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Psychology Of Color</title>
+  </head>
+  <body>
+    <section>
+      <!-- Navbar with all the colors -->
+      <h1>The Psychology of color</h1>
+
+      <button>Learn More</button>
+    </section>
+
+    <%for(let key in data){%>
+    <section>
+      <h2><%=data[key].name%></h2>
+      <p><%=data[key].intro%></p>
+
+      <div>
+        <button>Learn More</button>
+        <button>Home</button>
+      </div>
+    </section>
+
+    <%}%>
+
+    <!-- All the color sections -->
+  </body>
+</html>

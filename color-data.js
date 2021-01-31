@@ -1,5 +1,6 @@
 const colorData = {
   black: {
+    name: "Black",
     intro:
       " In color psychology, black’s color meaning is symbolic of mystery, power, elegance, and sophistication. In contrast, the color meaning can also evoke emotions such as sadness and anger.",
     info:
@@ -7,6 +8,7 @@ const colorData = {
     key: "Formality, Dramatic, Sophistication, Security.",
   },
   white: {
+    name: "White",
     intro:
       "In color psychology, white showcases innocence, goodness, cleanliness, and humility. Keep in mind, that this is the meaning in North American culture. In some parts of the world, white has the opposite meaning.",
     info:
@@ -14,6 +16,7 @@ const colorData = {
     key: "Clean, Simplicity, Innocence, Honest.",
   },
   red: {
+    name: "Red",
     intro:
       "The red color meaning is associated with excitement, passion, danger, energy, and action.\n In color psychology, red is the most intense color. And thus, can provoke the strongest emotions. Red can also trigger danger so you want to use the color sparingly.",
     info:
@@ -21,6 +24,7 @@ const colorData = {
     key: "Excitement, Strength, Love, Energy.",
   },
   blue: {
+    name: "Blue",
     intro:
       "In color psychology, blue’s color meaning ties closely to the sea and the sky. Conversely, blue can also carry some negative color meanings such as depression and can bring about a sense of coldness.",
     info:
@@ -28,6 +32,7 @@ const colorData = {
     key: "Trust, Peace, Loyalty, Competence.",
   },
   green: {
+    name: "Green",
     intro:
       "In color psychology, green is highly connected to nature and money. Growth, fertility, health, and generosity are some of the positive color meanings for the color. The color meaning for green also carries some negative associations such as envy.",
     info:
@@ -35,6 +40,7 @@ const colorData = {
     key: "Nature, Healing, Freshness, Quality.",
   },
   yellow: {
+    name: "Yellow",
     intro:
       "In color psychology, the color meaning for yellow revolves around sunshine. It evokes feelings of happiness, positivity, optimism, and summer but also of deceit and warning.",
     info:
@@ -42,6 +48,7 @@ const colorData = {
     key: "Creativity, Happiness, Warmth, Cheer.",
   },
   violet: {
+    name: "Violet",
     intro:
       "In color psychology, purple is a royal color. The color meaning for purple is connected to power, nobility, luxury, wisdom, and spirituality. But avoid using the color too much as it can cause feelings of frustration. Some perceive its overuse as arrogant.",
     info:
@@ -49,6 +56,7 @@ const colorData = {
     key: "Royalty, Luxury, Spirituality, Ambition.",
   },
   brown: {
+    name: "Brown",
     intro:
       "Brown is an earthy color. After all, it’s the color of earth, wood and stone. So naturally, color psychology highlights that the color meaning for brown relates to comfort, security and a down to earth nature.",
     info:
@@ -56,6 +64,7 @@ const colorData = {
     key: "Dependable, Rugged, Trustworthy, Simple.",
   },
   orange: {
+    name: "Orange",
     intro:
       "In color psychology, orange represents creativity, adventure, enthusiasm, success, and balance. The color orange adds a bit of fun to any picture, website, or marketing material it’s on.",
     info:
@@ -63,6 +72,7 @@ const colorData = {
     key: "Confidence, Success, Bravery, Sociability.",
   },
   pink: {
+    name: "Pink",
     intro:
       "Pink is a popular color for brands that primarily serve a female audience. In color psychology, pink’s color meaning revolves around femininity, playfulness and unconditional love.",
     info:

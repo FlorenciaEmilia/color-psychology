@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/FlorenciaEmilia/color-psychology/issues"
   },
-  "homepage": "https://github.com/FlorenciaEmilia/color-psychology#readme"
+  "homepage": "https://github.com/FlorenciaEmilia/color-psychology#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
 }
