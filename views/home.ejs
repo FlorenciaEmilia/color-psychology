@@ -4,28 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Psychology Of Color</title>
+    <%-include('partials/head')%>
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <section>
-      <!-- Navbar with all the colors -->
-      <h1>The Psychology of color</h1>
-
-      <button>Learn More</button>
-    </section>
-
-    <%for(let key in data){%>
-    <section>
-      <h2><%=data[key].name%></h2>
-      <p><%=data[key].intro%></p>
-
-      <div>
-        <button>Learn More</button>
-        <button>Home</button>
+    <!-- Nav -->
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <%for(let key in data){%>
+        <a
+          href="/<%=key%>"
+          style="background-color: <%=key%>"
+          class="nav-color"
+        ></a>
+        <%}%>
       </div>
-    </section>
+    </nav>
 
-    <%}%>
+    <div class="container-fluid">
+      <!-- Home -->
+      <section id="main">
+        <h1>The Psychology of color</h1>
+        <button>Learn More</button>
+        <div id="main-img-wrapper">
+          <img src="graphics/mobile-home.svg" alt="" srcset="" />
+        </div>
+      </section>
 
-    <!-- All the color sections -->
+      <!-- Pages -->
+      <%for(let key in data){%>
+      <section
+        style="background: <%=data[key].style.backgroundColor%>"
+        id="<%=key%>"
+        class="color-section"
+      >
+        <h2><%=data[key].name%></h2>
+        <p><%=data[key].intro%></p>
+
+        <div>
+          <a href="/<%=key%>" class="learn-more">Learn More</a>
+          <a href="/" class="home">Home</a>
+        </div>
+      </section>
+
+      <%}%>
+    </div>
   </body>
 </html>
