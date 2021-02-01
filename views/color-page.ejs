@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%=colorObj.name%></title>
     <%-include('partials/head')%>
+    <link rel="stylesheet" href="css/color-page.css" />
     <style>
       body {
         background: <%=colorObj.style.backgroundColor%>;
@@ -13,23 +14,25 @@
   </head>
 
   <body>
-    <h2><%=colorObj.name%></h2>
-    <p><%=colorObj.info%></p>
-    <div>
-      <h4>Key Concepts <span>/</span></h4>
-      <h5><%=colorObj.key%></h5>
-    </div>
-    <div>
-      <h4>Color Palettes <span>/</span></h4>
-      <%for(let i=1;i<=4;i++){%>
-      <img
-        src="./color-palettes/<%=colorObj.name%>/<%=i%>.jpeg"
-        alt="<%=colorObj.name%> palette"
-        srcset=""
-      />
-      <%}%>
-    </div>
+    <div class="container-fluid" id="<%=colorObj.name.toLowerCase()%>-page">
+      <h2><%=colorObj.name%></h2>
+      <p class="info"><%=colorObj.info%></p>
+      <div>
+        <h4>Key Concepts <span class="slash">/</span></h4>
+        <h5><%=colorObj.key%></h5>
+      </div>
+      <section class="color-palettes">
+        <h4>Color Palettes <span class="slash">/</span></h4>
+        <%for(let i=1;i<=4;i++){%>
+        <img
+          src="./color-palettes/<%=colorObj.name%>/<%=i%>.jpeg"
+          alt="<%=colorObj.name%> palette"
+          srcset=""
+        />
+        <%}%>
+      </section>
 
-    <a href="/">Home</a>
+      <a href="/" class="home">Home</a>
+    </div>
   </body>
 </html>

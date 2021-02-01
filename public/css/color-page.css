@@ -1,0 +1,56 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+
+h5 {
+  font-weight: lighter;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+
+.container-fluid {
+  padding: 2em;
+}
+
+.info {
+  width: 90%;
+}
+
+.slash {
+  font-weight: lighter;
+}
+
+.home {
+  border: 3px solid white;
+  background-color: white;
+  color: black;
+  padding: 0.5em;
+}
+
+#white-page,
+#yellow-page,
+#blue-page {
+  color: black;
+}
+
+/* Palette Section */
+.color-palettes {
+  overflow: hidden;
+  margin: 25px 0;
+}
+.color-palettes img {
+  max-height: 25vh;
+}
