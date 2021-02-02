@@ -1,0 +1,11 @@
+<nav class="navbar navbar-dark bg-dark sticky-top">
+  <div class="container-fluid p-1">
+    <%for(let key in data){%>
+    <a
+      href="/<%=key%>"
+      style="background-color: <%= key %>"
+      class="nav-color"
+    ></a>
+    <%}%>
+  </div>
+</nav>

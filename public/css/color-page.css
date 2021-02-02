@@ -6,6 +6,7 @@ body {
 h2 {
   font-size: 3rem;
   font-weight: bolder;
+  padding: 0.5em 0;
 }
 
 h4 {
@@ -21,12 +22,34 @@ h5 {
   letter-spacing: 1px;
 }
 
+/* Navbar */
+.nav-color {
+  min-width: 25px;
+  min-height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 0;
+}
+
+/* Path */
+#path {
+  margin: 1.5em 0;
+}
+a {
+  color: inherit;
+}
+.active-page {
+  font-weight: bolder;
+}
+
 .container-fluid {
   padding: 2em;
 }
 
 .info {
   width: 90%;
+  line-height: 175%;
+  margin-bottom: 2em;
 }
 
 .slash {
