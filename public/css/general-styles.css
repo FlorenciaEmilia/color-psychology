@@ -1,0 +1,15 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.nav-color {
+  min-width: 25px;
+  min-height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+}

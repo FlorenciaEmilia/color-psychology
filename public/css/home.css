@@ -1,38 +1,25 @@
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 section {
   height: 100vh;
   color: white;
 }
 
-h1 {
-  font-weight: bolder;
-  font-size: 4rem;
-}
 #main,
 #white,
 #yellow,
 #blue {
   color: black;
 }
-
-.nav-color {
-  min-width: 25px;
-  min-height: 25px;
-  border-radius: 50%;
-  border: 2px solid white;
+.container-fluid {
+  padding: 0;
 }
-
 /* Main */
 #main {
   overflow: hidden;
+  padding: 2em;
 }
 
 #main img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 80%;
 }
 
 #main button {
