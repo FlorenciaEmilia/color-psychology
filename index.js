@@ -12,6 +12,11 @@ app.get("/", (req, res) => {
   res.render("home", { data });
 });
 
+app.get("/info", (req, res) => {
+  let data = colorData.colorData;
+  res.render("info", { data });
+});
+
 app.get("/:color", (req, res) => {
   const { color } = req.params;
   let colorObj = colorData.colorData[color];
