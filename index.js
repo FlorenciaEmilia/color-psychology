@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 3000;
 const colorData = require("./color-data.js");
 const express = require("express");
 const app = express();
@@ -33,6 +34,6 @@ app.get("*", (req, res) => {
   res.render("404", { data });
 });
 
-// app.listen(3000, () => {
-//   console.log("listening on port 3000");
-// });
+app.listen(PORT, () => {
+  console.log("listening on port 3000");
+});
