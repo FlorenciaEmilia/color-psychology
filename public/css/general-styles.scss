@@ -30,13 +30,10 @@ h2 {
     padding: 0.5em 5em;
   }
   #navbar div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
+
   #navbar div a {
     margin: 0 0.5em;
   }
@@ -48,4 +45,3 @@ h2 {
     padding: 0.5em 12em;
   }
 }
-/*# sourceMappingURL=general-styles.css.map */

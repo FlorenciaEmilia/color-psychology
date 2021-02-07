@@ -11,11 +11,8 @@ h2 {
 
 img {
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .home {
@@ -26,4 +23,3 @@ img {
   display: inline-block;
   margin: 1em 0;
 }
-/*# sourceMappingURL=404.css.map */

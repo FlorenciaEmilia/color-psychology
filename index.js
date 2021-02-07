@@ -22,10 +22,8 @@ app.get("/:color", (req, res) => {
   let colorObj = colorData.colorData[color];
   let data = { ...colorData.colorData };
   if (colorObj) {
-    console.log("this works", data);
     res.render("color-page", { colorObj, data });
   } else {
-    console.log("this is the error page", data);
     res.render("404", { data });
   }
 });
@@ -34,6 +32,7 @@ app.get("*", (req, res) => {
   let data = colorData.colorData;
   res.render("404", { data });
 });
-app.listen(3000, () => {
-  console.log("listening on port 3000");
-});
+
+// app.listen(3000, () => {
+//   console.log("listening on port 3000");
+// });

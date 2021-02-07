@@ -1,17 +1,20 @@
 body {
-  background: linear-gradient(
-    -45deg,
-    rgba(235, 64, 52, 0.5),
-    rgba(51, 63, 232, 0.5),
-    rgba(50, 230, 59, 0.5),
-    rgba(221, 227, 50, 0.5),
-    rgba(148, 47, 224, 0.5),
-    rgba(189, 78, 38, 0.5),
-    rgba(235, 128, 52, 0.5),
-    rgba(237, 55, 228, 0.5)
-  );
+  background: linear-gradient(-45deg, rgba(235, 64, 52, 0.5), rgba(51, 63, 232, 0.5), rgba(50, 230, 59, 0.5), rgba(221, 227, 50, 0.5), rgba(148, 47, 224, 0.5), rgba(189, 78, 38, 0.5), rgba(235, 128, 52, 0.5), rgba(237, 55, 228, 0.5));
   background-size: 400% 400%;
-  animation: gradient 35s ease infinite;
+  -webkit-animation: gradient 35s ease infinite;
+          animation: gradient 35s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes gradient {
@@ -29,9 +32,11 @@ body {
 #path {
   margin: 1.5em 0;
 }
+
 a {
   color: inherit;
 }
+
 .active-page {
   font-weight: bolder;
 }
@@ -53,3 +58,4 @@ p {
   color: white;
   text-decoration: none;
 }
+/*# sourceMappingURL=info.css.map */
